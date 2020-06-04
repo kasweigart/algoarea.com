@@ -1,0 +1,11 @@
+{
+  "name": "algoarea",
+  "version": "1.0.0",
+  "description": "A website to organize my data structures & algorithms studies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kyle Sweigart",
+  "license": "MIT"
+}
