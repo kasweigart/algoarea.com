@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
-import RSNavbar from './components/NavbarToggler'
+import RSNav from './components/NavbarToggler'
 
 function App() {
-  return (<div>
-    <RSNavbar />
+
+  return (
+  <div>
+    <div className='navContent'>
+      <RSNav />
+    </div>
   </div>
   );
 }
