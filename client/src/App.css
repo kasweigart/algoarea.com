@@ -1,20 +1,3 @@
-.navContent {
-    display: flex;
-    justify-content: center;
-    background-color: #28a745;
-    position: fixed;
-    top: 0em;
-    left: 0em;
-    right: 0em;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 56px;
-    z-index: 999;
-  }
-
-@media (min-width: 1200px) {
-    #nav {
-      width: 1170px;
-  }
+#nav {
+  background-color: #ebeced;
 }

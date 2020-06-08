@@ -8,11 +8,14 @@ import {
   NavItem,
   NavLink,
   UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
+  NavbarText,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Button
 } from 'reactstrap';
+import logo from '../images/logo.png';
 
 const RSNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +24,9 @@ const RSNav = (props) => {
 
   return (
     <div id='nav'>
-      <Navbar color="success" light expand="md">
-        <NavbarBrand href="/">AlgoArea</NavbarBrand>
+      <Navbar light expand="md">
+        <img src={logo} width="32px" className="mr-2"></img>
+        <NavbarBrand href="https://www.algoarea.com/">AlgoArea</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -32,25 +36,30 @@ const RSNav = (props) => {
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">Data Structures</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="">Time & Space Complexity</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="">Exercises</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="">Resources</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="">Contact</NavLink>
+            </NavItem>
             <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <Form inline>
+      <FormGroup>
+        <Label for="search"></Label>
+        <Input type="text" name="text" id="search" placeholder="Search..." />
+      </FormGroup>
+    </Form>
+          <NavbarText>
+            <NavLink href=''>Login</NavLink>
+          </NavbarText>
         </Collapse>
       </Navbar>
     </div>
