@@ -8,11 +8,11 @@ import {
   NavItem,
   NavLink,
   UncontrolledDropdown,
-  NavbarText,
   Form,
   FormGroup,
   Label,
-  Input
+  Input,
+  Button
 } from 'reactstrap';
 import logo from '../images/logo.png';
 import { Link, Redirect } from 'react-router-dom'
@@ -52,38 +52,38 @@ const RSNav = (props) => {
             </NavItem>
             <NavItem>
             <Link to='/time&space-complexity' style={{textDecoration: 'none'}}>
-              <NavLink href="">Time & Space Complexity</NavLink>
+              <NavLink>Time & Space Complexity</NavLink>
               </Link>
             </NavItem>
             <NavItem>
                 <Link to='/exercises' style={{textDecoration: 'none'}}>
-              <NavLink href="">Exercises</NavLink>
+              <NavLink>Exercises</NavLink>
               </Link>
             </NavItem>
             <NavItem>
               <Link to ='/resources' style={{textDecoration: 'none'}}>
-              <NavLink href="">Resources</NavLink>
+              <NavLink>Resources</NavLink>
               </Link>
             </NavItem>
             <NavItem>
               <Link to='/contact' style={{textDecoration: 'none'}}>
-              <NavLink href="">Contact</NavLink>
+              <NavLink>Contact</NavLink>
               </Link>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
             </UncontrolledDropdown>
           </Nav>
-          <Form inline onSubmit={SubmitHandler()}>
+          <Form inline onSubmit={SubmitHandler()} className='mr-3'>
       <FormGroup>
         <Label for="search"></Label>
         <Input type="text" name="text" id="search" placeholder="Search..." />
       </FormGroup>
     </Form>
-          <NavbarText>
-            <Link to='/login'style={{textDecoration: 'none'}}>
-            <NavLink>Login</NavLink>
+    <Link to='/login'style={{textDecoration: 'none'}}> 
+      <Button outline color ="secondary">
+            Login
+            </Button>
             </Link>
-          </NavbarText>
         </Collapse>
       </Navbar>
     </div>
