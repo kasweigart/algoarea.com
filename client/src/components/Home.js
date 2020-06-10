@@ -10,6 +10,9 @@ import exercise from '../images/exercise.png'
 const Home = (props) => {
   return (
     <div>
+    <Alert color='warning'>
+      This site is currently under construction.
+    </Alert>
       <Jumbotron className='mb-0 text-center bg-white'>
         <h1 className="display-3">Welcome to AlgoArea</h1>
         <p className="lead">A collection of computer science concepts at your disposal to help you start thinking in terms of memory-use and efficiency.</p>
@@ -51,7 +54,7 @@ const Home = (props) => {
         <p className="lead font-italic">Time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the input. Similarly, Space complexity of an algorithm quantifies the amount of space or memory taken by an algorithm to run as a function of the length of the input.<br></br>(hackerearth.com)</p>
         <hr className="my-2" />
         <img src={tsc} alt="" className='img-fluid w-75 mt-2 mb-2'/>
-        <p>Analyze the relation of space and time to understand why certain methods perform better than others.</p>
+        <p>Analyze the relationship between space and time to understand why certain methods perform better than others.</p>
         <p className="lead">
           <Button color="info">Go to Time & Space Complexity</Button>
         </p>

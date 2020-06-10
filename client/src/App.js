@@ -15,7 +15,6 @@ import Exercises from './components/Exercises'
 import Resources from './components/Resources'
 import Contact from './components/Contact'
 import Search from './components/Search'
-import Login from './components/Login'
 import Footer from './components/Footer'
 
 function App() {
@@ -50,9 +49,6 @@ function App() {
         </Route>
         <Route exact path='/search'>
           <Search />
-        </Route>
-        <Route exact path='/login'>
-          <Login />
         </Route>
         </Switch>
         </div>
