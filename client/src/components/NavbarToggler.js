@@ -30,7 +30,7 @@ const RSNav = (props) => {
 
   return (
     <div id='nav'>
-      <Navbar light expand="md">
+      <Navbar light expand="md" className='shadow-sm mb-3 bg-white'>
       <Link to='/'>
         <img src={logo} width="32px" className="mr-2"></img>
         </Link>
@@ -79,11 +79,11 @@ const RSNav = (props) => {
         <Input type="text" name="text" id="search" placeholder="Search..." />
       </FormGroup>
     </Form>
-    <Link to='/login'style={{textDecoration: 'none'}}> 
+    {/* <Link to='/login'style={{textDecoration: 'none'}}> 
       <Button outline color ="secondary">
             Login
             </Button>
-            </Link>
+            </Link> */}
         </Collapse>
       </Navbar>
     </div>

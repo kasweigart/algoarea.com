@@ -16,6 +16,7 @@ import Resources from './components/Resources'
 import Contact from './components/Contact'
 import Search from './components/Search'
 import Login from './components/Login'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
     <BrowserRouter>
     <div>
     <RSNav />
+      <div className='container-xl'>
         <Switch>
         <Route exact path='/'>
           <Home />
@@ -53,8 +55,9 @@ function App() {
           <Login />
         </Route>
         </Switch>
-        
+        </div>
       </div>
+      <Footer />
     </BrowserRouter>
   );
 }
