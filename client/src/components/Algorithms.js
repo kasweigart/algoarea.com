@@ -114,7 +114,7 @@ const Algorithms = (props) => {
             className={classnames({ active: activeTab === '13' })}
             onClick={() => { toggle('13'); }}
           >
-            Dijkstra's
+            Dijkstra's Algorithm
           </NavLink>
         </NavItem>
         <NavItem>
@@ -184,29 +184,67 @@ const Algorithms = (props) => {
       </Nav>
       <TabContent activeTab={activeTab}>
         <TabPane tabId="1">
-          <Row>
-            <Col sm="12">
-              <h4>Tab 1 Contents</h4>
-            </Col>
-          </Row>
+            <h2 className='mt-4'>Signed Numbers</h2>
         </TabPane>
         <TabPane tabId="2">
-          <Row>
-            <Col sm="6">
-              <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
-                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Go somewhere</Button>
-              </Card>
-            </Col>
-            <Col sm="6">
-              <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
-                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Go somewhere</Button>
-              </Card>
-            </Col>
-          </Row>
+            <h2 className='mt-4'>Unsigned Numbers</h2>
+        </TabPane>
+        <TabPane tabId="3">
+            <h2 className='mt-4'>Sort Stabilization</h2>
+        </TabPane>
+        <TabPane tabId="4">
+            <h2 className='mt-4'>Merge Sort</h2>
+        </TabPane>
+        <TabPane tabId="5">
+            <h2 className='mt-4'>Quick Sort</h2>
+        </TabPane>
+        <TabPane tabId="6">
+            <h2 className='mt-4'>Heap Sort</h2>
+        </TabPane>
+        <TabPane tabId="7">
+            <h2 className='mt-4'>Binary Search</h2>
+        </TabPane>
+        <TabPane tabId="8">
+            <h2 className='mt-4'>Selections</h2>
+        </TabPane>
+        <TabPane tabId="9">
+            <h2 className='mt-4'>Permutations</h2>
+        </TabPane>
+        <TabPane tabId="10">
+            <h2 className='mt-4'>Subsets</h2>
+        </TabPane>
+        <TabPane tabId="11">
+            <h2 className='mt-4'>Breadth-First Search</h2>
+        </TabPane>
+        <TabPane tabId="12">
+            <h2 className='mt-4'>Depth-First Search</h2>
+        </TabPane>
+        <TabPane tabId="13">
+            <h2 className='mt-4'>Dijkstra's Algorithm</h2>
+        </TabPane>
+        <TabPane tabId="14">
+            <h2 className='mt-4'>Tree Traversals</h2>
+        </TabPane>
+        <TabPane tabId="15">
+            <h2 className='mt-4'>External Sort</h2>
+        </TabPane>
+        <TabPane tabId="16">
+            <h2 className='mt-4'>NP-Complete</h2>
+        </TabPane>
+        <TabPane tabId="17">
+            <h2 className='mt-4'>Topological Sort</h2>
+        </TabPane>
+        <TabPane tabId="18">
+            <h2 className='mt-4'>Cycle Directed</h2>
+        </TabPane>
+        <TabPane tabId="19">
+            <h2 className='mt-4'>Cycle Undirected</h2>
+        </TabPane>
+        <TabPane tabId="20">
+            <h2 className='mt-4'>Graph Connectivity</h2>
+        </TabPane>
+        <TabPane tabId="21">
+            <h2 className='mt-4'>Graph Correlation</h2>
         </TabPane>
       </TabContent>
     </div>

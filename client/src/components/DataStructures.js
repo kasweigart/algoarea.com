@@ -88,29 +88,31 @@ const DataStructures = (props) => {
       </Nav>
       <TabContent activeTab={activeTab}>
         <TabPane tabId="1">
-          <Row>
-            <Col sm="12">
-              <h4>Tab 1 Contents</h4>
-            </Col>
-          </Row>
+        <h2 className='mt-4'>Dynamic Array</h2>
         </TabPane>
         <TabPane tabId="2">
-          <Row>
-            <Col sm="6">
-              <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
-                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Go somewhere</Button>
-              </Card>
-            </Col>
-            <Col sm="6">
-              <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
-                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Go somewhere</Button>
-              </Card>
-            </Col>
-          </Row>
+        <h2 className='mt-4'>Linked List</h2>
+        </TabPane>
+        <TabPane tabId="3">
+        <h2 className='mt-4'>Stack/Queue</h2>
+        </TabPane>
+        <TabPane tabId="4">
+        <h2 className='mt-4'>Hash Tables</h2>
+        </TabPane>
+        <TabPane tabId="5">
+        <h2 className='mt-4'>Binary Search Tree</h2>
+        </TabPane>
+        <TabPane tabId="6">
+        <h2 className='mt-4'>Binary Heaps</h2>
+        </TabPane>
+        <TabPane tabId="7">
+        <h2 className='mt-4'>Priority Queue</h2>
+        </TabPane>
+        <TabPane tabId="8">
+        <h2 className='mt-4'>Graphs</h2>
+        </TabPane>
+        <TabPane tabId="9">
+        <h2 className='mt-4'>Trie</h2>
         </TabPane>
       </TabContent>
     </div>

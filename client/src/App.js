@@ -4,8 +4,7 @@ import RSNav from './components/NavbarToggler'
 import {
   BrowserRouter,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Home from './components/Home'
 import Algorithms from './components/Algorithms'
@@ -24,7 +23,7 @@ function App() {
     <BrowserRouter>
     <div>
     <RSNav />
-      <div className='container-xl'>
+      <div className='container'>
         <Switch>
         <Route exact path='/'>
           <Home />

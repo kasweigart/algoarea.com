@@ -1,18 +1,18 @@
 import React from 'react';
-import { Jumbotron, Container } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 const Exercises = (props) => {
   return (
     <div>
     <h1 className='mb-3 font-weight-normal'>Exercises</h1>
-      <Jumbotron fluid>
-        <Container fluid>
-          <h1 className="display-3">Fluid jumbotron</h1>
-          <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        </Container>
-      </Jumbotron>
+    <Form>
+      <FormGroup>
+        <Label for="exercise"></Label>
+        <Input type="textarea" name="exercise" id="exercise" style={{height: '32em'}} />
+      </FormGroup>
+    </Form>
     </div>
   );
-};
+}
 
 export default Exercises;
