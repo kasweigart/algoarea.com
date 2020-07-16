@@ -10,12 +10,12 @@ import exercise from '../images/exercise.png'
 const Home = (props) => {
   return (
     <div>
-    <Alert color='warning'>
+    {/* <Alert color='warning'>
       This site is currently under construction.
-    </Alert>
+    </Alert> */}
       <Jumbotron className='mb-0 text-center bg-white'>
         <h1 className="display-3">Welcome to AlgoArea</h1>
-        <p className="lead">A collection of computer science concepts at your disposal to help you start thinking in terms of memory-use and efficiency.</p>
+        <p className="lead">A collection of computer science concepts at your disposal to help you start thinking in terms of memory allocation and efficiency.</p>
         <hr className="my-2" />
         <img src={home} alt="" className='mt-4 mb-4 img-fluid'/>
         <p>Below you will find what this platform has to offer.</p>

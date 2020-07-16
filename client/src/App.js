@@ -10,6 +10,7 @@ import Home from './components/Home'
 import Algorithms from './components/Algorithms'
 import DataStructures from './components/DataStructures'
 import TimeAndSpaceComplexity from './components/TimeAndSpaceComplexity'
+import Terminology from './components/Terminology'
 import Exercises from './components/Exercises'
 import Resources from './components/Resources'
 import Contact from './components/Contact'
@@ -36,6 +37,9 @@ function App() {
         </Route>
         <Route exact path='/time&space-complexity'>
           <TimeAndSpaceComplexity />
+        </Route>
+        <Route exact path='/terminology'>
+          <Terminology />
         </Route>
         <Route exact path='/exercises'>
           <Exercises />
