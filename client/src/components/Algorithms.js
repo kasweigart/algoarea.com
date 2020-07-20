@@ -18,7 +18,7 @@ const Algorithms = (props) => {
             className={classnames({ active: activeTab === '1' })}
             onClick={() => { toggle('1'); }}
           >
-            Signed Numbers
+            Signed Numbers Representations
           </NavLink>
         </NavItem>
         <NavItem>
@@ -184,7 +184,13 @@ const Algorithms = (props) => {
       </Nav>
       <TabContent activeTab={activeTab}>
         <TabPane tabId="1">
-            <h2 className='mt-4'>Signed Numbers</h2>
+            <h2 className='mt-4'>Signed Number Representations</h2>
+            <p>These are required to encode negative numbers in binary number systems.</p>
+            <p>The four widely-used representations of signed numbers are the following:</p>
+            <h4>Sign-and-Magnitude</h4>
+            <h4>Ones' Compliment</h4>
+            <h4>Twos' Compliment</h4>
+            <h4>Offset Binary</h4>
         </TabPane>
         <TabPane tabId="2">
             <h2 className='mt-4'>Unsigned Numbers</h2>

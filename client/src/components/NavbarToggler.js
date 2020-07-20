@@ -13,14 +13,20 @@ import {
   Label,
   Input,
   Button,
+  Card,
+  CardBody,
 } from "reactstrap";
 import logo from "../images/logo.png";
 import { Link, Redirect } from "react-router-dom";
+import Search from './Search'
 
 const RSNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
+
+  const toggle2 = () => setIsOpen2(!isOpen2);
 
   function SubmitHandler() {
     return <Redirect to="/search" />;
@@ -57,10 +63,7 @@ const RSNav = (props) => {
               </Link>
             </NavItem>
             <NavItem>
-              <Link
-                to="/terminology"
-                style={{ textDecoration: "none" }}
-              >
+              <Link to="/terminology" style={{ textDecoration: "none" }}>
                 <NavLink>Terminology</NavLink>
               </Link>
             </NavItem>
@@ -81,22 +84,7 @@ const RSNav = (props) => {
             </NavItem>
             <UncontrolledDropdown nav inNavbar></UncontrolledDropdown>
           </Nav>
-          <Form inline onSubmit={SubmitHandler()} className="mr-3">
-            <FormGroup>
-              <Label for="search"></Label>
-              <Input
-                type="text"
-                name="text"
-                id="search"
-                placeholder="Search..."
-              />
-            </FormGroup>
-          </Form>
-          {/* <Link to='/login'style={{textDecoration: 'none'}}> 
-      <Button outline color ="secondary">
-            Login
-            </Button>
-            </Link> */}
+          <Search />
         </Collapse>
       </Navbar>
     </div>

@@ -1,0 +1,198 @@
+[
+    {
+        "subject": "Algorithms",
+        "name": "Signed Numbers Representations"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Unsigned Numbers"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Sort Stabilization"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Merge Sort"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Quick Sort"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Heap Sort"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Binary Search"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Selections"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Permutations"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Subsets"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Breadth-First Search"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Depth-First Search"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Dijkstra's Algorithm"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Tree Traversals"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "External Sort"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "NP-Complete"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Topological Sort"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Cycle Directed"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Cycle Undirected"
+    },
+    {
+        "subject": "Algorithms",
+        "name": "Graph Connectivity"
+    },
+    {
+        "subject": "Data Structures",
+        "name": "Dynamic Array"
+    },
+    {
+        "subject": "Data Structures",
+        "name": "Linked List"
+    },
+    {
+        "subject": "Data Structures",
+        "name": "Stack & Queue"
+    },
+    {
+        "subject": "Data Structures",
+        "name": "Hash Tables"
+    },
+    {
+        "subject": "Data Structures",
+        "name": "Binary Tree"
+    },
+    {
+        "subject": "Data Structures",
+        "name": "Binary Heaps"
+    },
+    {
+        "subject": "Data Structures",
+        "name": "Priority Queue"
+    },
+    {
+        "subject": "Data Structures",
+        "name": "Graphs"
+    },
+    {
+        "subject": "Data Structures",
+        "name": "Trie"
+    },
+    {
+        "subject": "Time and Space Complexity",
+        "name": "Time Complexity"
+    },
+    {
+        "subject": "Time and Space Complexity",
+        "name": "Space Complexity"
+    },
+    {
+        "subject": "Time and Space Complexity",
+        "name": "O-Notation"
+    },
+    {
+        "subject": "Terminology",
+        "name": "Leaf"
+    },
+    {
+        "subject": "Terminology",
+        "name": "Iterate"
+    },
+    {
+        "subject": "Terminology",
+        "name": "XOR"
+    },
+    {
+        "subject": "Exercises",
+        "name": "Reverse Linked List"
+    },
+    {
+        "subject": "Exercises",
+        "name": "Fizz Buzz"
+    },
+    {
+        "subject": "Exercises",
+        "name": "Single Number"
+    },
+    {
+        "subject": "Exercises",
+        "name": "Maximum Depth of Binary Tree"
+    },
+    {
+        "subject": "Resources",
+        "name": "Introduction to Algorithms, Third Edition by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein"
+    },
+    {
+        "subject": "Resources",
+        "name": "Algorithms, Fourth Edition by Robert Sedgewick and Kevin Wayne"
+    },
+    {
+        "subject": "Resources",
+        "name": "The Algorithm Design Manual by Steve S. Skiena"
+    },
+    {
+        "subject": "Resources",
+        "name": "Algorithms For Interviews by Adnan Aziz and Amit Prakash"
+    },
+    {
+        "subject": "Resources",
+        "name": "Algorithms in a Nutshell by George T. Heineman, Stanley Selkow, and Gary Pollice"
+    },
+    {
+        "subject": "Resources",
+        "name": "Algorithm Design by Jon Kleinberg and Éva Tardos"
+    },
+    {
+        "subject": "Resources",
+        "name": "Introduction to Algorithms: A Creative Approach by Udi Manber"
+    },
+    {
+        "subject": "Resources",
+        "name": "The Design and Analysis of Algorithms by Anany Levitin"
+    },
+    {
+        "subject": "Resources",
+        "name": "Data Structures and Algorithms by John E. Hopcroft, Alfred V. Aho and Jeffrey D. Ullman"
+    },
+    {
+        "subject": "Resources",
+        "name": "Python Algorithms: Mastering Basic Algorithms in the Python Language by Magnus Lie Hetland"
+    }
+]
