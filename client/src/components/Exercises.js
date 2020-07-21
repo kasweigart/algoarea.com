@@ -5,6 +5,8 @@ import singleNumber from "../codeImages/singleNumber.png";
 import singleNumberBitManip from "../codeImages/singleNumberBitManip.png";
 import fizzBuzz from "../codeImages/fizzBuzz.png";
 import reverseLinkedList from "../codeImages/reverseLinkedList.png";
+import moveZeroes from "../codeImages/moveZeroes.png";
+
 
 
 const Exercises = (props) => {
@@ -124,6 +126,29 @@ const Exercises = (props) => {
           </p>
           <img
             src={reverseLinkedList}
+            alt=""
+            style={{ maxWidth: "100%" }}
+            className="mb-3"
+          />
+          <p>
+            Time Complexity:{" "}
+            <b className="text-success">
+              O(n)
+            </b>
+          </p>
+          <p>
+            Space Complexity: <b className="text-success">O(1)</b>
+          </p>
+        </CardBody>
+      </Card>
+      <Card className="mb-4">
+        <CardBody>
+          <h4>Move Zeroes</h4>
+          <p>
+          Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+          </p>
+          <img
+            src={moveZeroes}
             alt=""
             style={{ maxWidth: "100%" }}
             className="mb-3"

@@ -1,4 +1,5 @@
 import React from "react";
+import tsc from '../images/tsc.png'
 
 const TimeAndSpaceComplexity = (props) => {
   return (
@@ -24,6 +25,7 @@ const TimeAndSpaceComplexity = (props) => {
         Lower order terms of an O-notation are dismissed as these are usually
         deemed insignificant as a function's input increases.
       </p>
+      <img src={tsc} alt="" style={{width: '60%'}}/>
     </div>
   );
 };

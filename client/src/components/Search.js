@@ -46,9 +46,10 @@ function Search() {
       </Form>
       <Popover placement="left" isOpen={popoverOpen} target="Popover1">
         {results.map(result => {
+            let redirect = `http://localhost:3000/${result.item.subject}`
             return (
                 <PopoverBody>
-                    <a href='' style={{textDecoration: 'none'}}>{result.item.name}</a>
+                    <a href={redirect} style={{textDecoration: 'none'}}>{result.item.name}</a>
                 </PopoverBody>
             )
         })}

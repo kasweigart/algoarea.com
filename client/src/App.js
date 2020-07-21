@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './components/Home'
 import Algorithms from './components/Algorithms'
+import Visualizer from './components/Visualizer'
 import DataStructures from './components/DataStructures'
 import TimeAndSpaceComplexity from './components/TimeAndSpaceComplexity'
 import Terminology from './components/Terminology'
@@ -31,6 +32,9 @@ function App() {
         </Route>
         <Route exact path='/algorithms'>
           <Algorithms />
+        </Route>
+        <Route exact path='/sorting-visualizer'>
+          <Visualizer />
         </Route>
         <Route exact path='/data-structures'>
           <DataStructures />
