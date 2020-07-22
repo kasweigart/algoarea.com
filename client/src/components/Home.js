@@ -70,7 +70,7 @@ const Home = (props) => {
       </Jumbotron>
       <Jumbotron className='mb-0' style={{backgroundColor: '#f7f9fa'}}>
         <h1 className="display-4">Resources</h1>
-        <p className="lead">A section of helpful resources to guide you through your journey of the complex world of computer science.</p>
+        <p className="lead">A section of helpful resources to guide you through your journey of mastering algorithms.</p>
         <hr className="my-2" />
         <p></p>
         <p className="lead">

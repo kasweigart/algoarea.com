@@ -7,7 +7,7 @@ const TimeAndSpaceComplexity = (props) => {
       <h1 className="mb-3 font-weight-normal">Time & Space Complexity</h1>
       <h4>Time Complexity</h4>
       <p>
-        Time complexitty is defined as the amount of time it will take an
+        Time complexity is defined as the amount of time it will take an
         algorithm to execute being a function of its input length.
       </p>
       <h4>Space Complexity</h4>

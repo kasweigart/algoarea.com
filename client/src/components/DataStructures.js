@@ -117,7 +117,7 @@ const DataStructures = (props) => {
         <TabPane tabId="1">
           <h2 className="mt-4">Dynamic Array</h2>
           <p>
-            A list allowing elements of be added or removed in constant time.
+            A list allowing elements to be added or removed in constant time.
           </p>
           <p>This data structure allows random access unlike a linked list.</p>
           <img src={arr} alt="" />
@@ -254,7 +254,7 @@ const DataStructures = (props) => {
           <p>Keys in a trie are usually strings.</p>
           <p>
             Nodes of a trie do not store an associated key rather the position
-            in the tree tells which key the ndoe is associated with.
+            in the tree tells which key the node is associated with.
           </p>
           <p>
             Node descendants store a common prefix of the string with the root

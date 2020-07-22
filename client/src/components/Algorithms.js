@@ -3,6 +3,20 @@ import { TabContent, TabPane, Nav, NavItem, NavLink } from "reactstrap";
 import classnames from "classnames";
 import { Link } from "react-router-dom";
 import mergeSort from "../images/mergeSort.svg";
+import signUnsignNum from "../images/signUnsignNum.png";
+import sortStability from "../images/sortStability.svg";
+import quickSort from "../images/quickSort.png";
+import heapSort from "../images/heapSort.gif";
+import binarySearch from "../images/binarySearch.svg";
+import dfs from "../images/dfs.gif";
+import bfs from "../images/bfs.svg";
+import dijAlg from "../images/dijAlg.svg";
+import preorderTrav from '../images/preorderTrav.gif'
+import npComplete from '../images/npComplete.svg'
+import topolOrder from '../images/topolOrder.svg'
+import directCycle from '../images/directCycle.png'
+import undirectCycle from '../images/undirectCycle.png'
+import graphConnect from '../images/graphConnect.svg'
 
 const Algorithms = (props) => {
   const [activeTab, setActiveTab] = useState("1");
@@ -27,7 +41,7 @@ const Algorithms = (props) => {
               toggle("1");
             }}
           >
-            Signed Numbers Representations
+            Signed Numbers
           </NavLink>
         </NavItem>
         <NavItem>
@@ -47,7 +61,7 @@ const Algorithms = (props) => {
               toggle("3");
             }}
           >
-            Sort Stabilization
+            Sort Stability
           </NavLink>
         </NavItem>
         <NavItem>
@@ -197,7 +211,7 @@ const Algorithms = (props) => {
               toggle("18");
             }}
           >
-            Cycle Directed
+            Directed Cycle
           </NavLink>
         </NavItem>
         <NavItem>
@@ -207,7 +221,7 @@ const Algorithms = (props) => {
               toggle("19");
             }}
           >
-            Cycle Undirected
+            Undirected Cycle
           </NavLink>
         </NavItem>
         <NavItem>
@@ -233,7 +247,7 @@ const Algorithms = (props) => {
       </Nav>
       <TabContent activeTab={activeTab}>
         <TabPane tabId="1">
-          <h2 className="mt-4">Signed Number Representations</h2>
+          <h2 className="mt-4">Signed Number</h2>
           <p>
             These are required to encode negative numbers in binary number
             systems.
@@ -243,15 +257,51 @@ const Algorithms = (props) => {
             following:
           </p>
           <h4>Sign-and-Magnitude</h4>
+          <p>The sign of a number is represented with a sign bit.</p>
+          <p>
+            The sign bit is 0 when the number is positive, and 1 when a number
+            is negative.
+          </p>
           <h4>Ones' Compliment</h4>
+          <p>
+            This is represented as the compliment of its positive counterpart.
+          </p>
           <h4>Twos' Compliment</h4>
-          <h4>Offset Binary</h4>
+          <p>
+            This is represented as one greater than the ones' compliment of the
+            positive integer.
+          </p>
+          <h4>Biased Representation</h4>
+          <p>This is represented with a biasing value.</p>
+          <p>
+            A value <i>K</i> is added to the unsigned number to act its signed
+            representation.
+          </p>
+          <img src={signUnsignNum} alt="" className="img-fluid mt-4" />
         </TabPane>
         <TabPane tabId="2">
           <h2 className="mt-4">Unsigned Numbers</h2>
+          <p>
+            Unsigned numbers can only store positive numbers. They cannot store
+            negative numbers.
+          </p>
+          <p>
+            These numbers do not have a sign (hence the name unsigned numbers).
+          </p>
+          <p>An unsigned number carries the magnitude of the value.</p>
+          <p>
+            For example, the unsigned binary representation of the integer 61
+            is: <code>00111101</code>
+          </p>
+          <img src={signUnsignNum} alt="" className="img-fluid mt-4" />
         </TabPane>
         <TabPane tabId="3">
-          <h2 className="mt-4">Sort Stabilization</h2>
+          <h2 className="mt-4">Sort Stability</h2>
+          <p>
+            A sorting algorithm is said to be stable when elements of the same
+            key and order are present in its output as they are in its input.
+          </p>
+          <img src={sortStability} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="4">
           <h2 className="mt-4">Merge Sort</h2>
@@ -269,7 +319,8 @@ const Algorithms = (props) => {
             mergeSort(arr, l, r)
             <br />
             If r &gt; l<br />
-            1. Locate the center of the array and then divide the array into two halves: <br />
+            1. Locate the center of the array and then divide the array into two
+            halves: <br />
             c = (l + r) / 2
             <br />
             2. Call mergeSort for the first half of the array: <br />
@@ -281,21 +332,31 @@ const Algorithms = (props) => {
             <br />
             4. Merge the two sorted halves together from step 2 and 3:
             <br />
-            Call merge(arr, l, c, r)<br/>
+            Call merge(arr, l, c, r)
+            <br />
           </code>
           <p>Merge sort has a time complexity of O(nlogn).</p>
-          <img src={mergeSort} alt="" />
+          <img src={mergeSort} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="5">
           <h2 className="mt-4">Quick Sort</h2>
           <p>This is classified as a conquer and divide algorithm.</p>
           <p></p>
+          <img
+            src={quickSort}
+            alt=""
+            className="img-fluid"
+            style={{ width: "50%" }}
+          />
         </TabPane>
         <TabPane tabId="6">
           <h2 className="mt-4">Heap Sort</h2>
+          <p>Heap sort is not a stable sorting algorithm.</p>
+          <img src={heapSort} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="7">
           <h2 className="mt-4">Binary Search</h2>
+          <img src={binarySearch} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="8">
           <h2 className="mt-4">Selections</h2>
@@ -308,33 +369,42 @@ const Algorithms = (props) => {
         </TabPane>
         <TabPane tabId="11">
           <h2 className="mt-4">Breadth-First Search</h2>
+          <img src={bfs} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="12">
           <h2 className="mt-4">Depth-First Search</h2>
+          <img src={dfs} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="13">
           <h2 className="mt-4">Dijkstra's Algorithm</h2>
+          <img src={dijAlg} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="14">
           <h2 className="mt-4">Tree Traversals</h2>
+          <img src={preorderTrav} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="15">
           <h2 className="mt-4">External Sort</h2>
         </TabPane>
         <TabPane tabId="16">
           <h2 className="mt-4">NP-Complete</h2>
+          <img src={npComplete} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="17">
           <h2 className="mt-4">Topological Sort</h2>
+          <img src={topolOrder} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="18">
-          <h2 className="mt-4">Cycle Directed</h2>
+          <h2 className="mt-4">Directed Cycle</h2>
+          <img src={directCycle} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="19">
-          <h2 className="mt-4">Cycle Undirected</h2>
+          <h2 className="mt-4">Undirected Cycle</h2>
+          <img src={undirectCycle} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="20">
           <h2 className="mt-4">Graph Connectivity</h2>
+          <img src={graphConnect} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="21">
           <h2 className="mt-4">Graph Correlation</h2>
