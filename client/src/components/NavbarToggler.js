@@ -62,11 +62,11 @@ const RSNav = (props) => {
                 <NavLink>Time & Space Complexity</NavLink>
               </Link>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <Link to="/terminology" style={{ textDecoration: "none" }}>
                 <NavLink>Terminology</NavLink>
               </Link>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <Link to="/exercises" style={{ textDecoration: "none" }}>
                 <NavLink>Exercises</NavLink>

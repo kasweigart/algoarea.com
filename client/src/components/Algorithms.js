@@ -11,12 +11,14 @@ import binarySearch from "../images/binarySearch.svg";
 import dfs from "../images/dfs.gif";
 import bfs from "../images/bfs.svg";
 import dijAlg from "../images/dijAlg.svg";
-import preorderTrav from '../images/preorderTrav.gif'
-import npComplete from '../images/npComplete.svg'
-import topolOrder from '../images/topolOrder.svg'
-import directCycle from '../images/directCycle.png'
-import undirectCycle from '../images/undirectCycle.png'
-import graphConnect from '../images/graphConnect.svg'
+import preorderTrav from "../images/preorderTrav.gif";
+import npComplete from "../images/npComplete.svg";
+import topolOrder from "../images/topolOrder.svg";
+import directCycle from "../images/directCycle.png";
+import undirectCycle from "../images/undirectCycle.png";
+import graphConnect from "../images/graphConnect.svg";
+import permutation from "../images/permutation.png";
+import selections from "../images/selections.png";
 
 const Algorithms = (props) => {
   const [activeTab, setActiveTab] = useState("1");
@@ -27,12 +29,10 @@ const Algorithms = (props) => {
 
   return (
     <div>
-      <div className="d-flex justify-content-between">
-        <h1 className="mb-3 font-weight-normal">Algorithms</h1>
-        <Link to="/sorting-visualizer" style={{ textDecoration: "none" }}>
-          <h4 className="pt-3">Sorting Visualizer</h4>
-        </Link>
-      </div>
+      <h1 className="mb-3 font-weight-normal">Algorithms</h1>
+      <Link to="/sorting-visualizer" style={{ textDecoration: "none" }}>
+        <h4>Sorting Visualizer</h4>
+      </Link>
       <Nav tabs>
         <NavItem>
           <NavLink
@@ -124,16 +124,7 @@ const Algorithms = (props) => {
             Permutations
           </NavLink>
         </NavItem>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "10" })}
-            onClick={() => {
-              toggle("10");
-            }}
-          >
-            Subsets
-          </NavLink>
-        </NavItem>
+
         <NavItem>
           <NavLink
             className={classnames({ active: activeTab === "11" })}
@@ -234,16 +225,6 @@ const Algorithms = (props) => {
             Graph Connectivity
           </NavLink>
         </NavItem>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "21" })}
-            onClick={() => {
-              toggle("21");
-            }}
-          >
-            Graph Correlation
-          </NavLink>
-        </NavItem>
       </Nav>
       <TabContent activeTab={activeTab}>
         <TabPane tabId="1">
@@ -341,7 +322,13 @@ const Algorithms = (props) => {
         <TabPane tabId="5">
           <h2 className="mt-4">Quick Sort</h2>
           <p>This is classified as a conquer and divide algorithm.</p>
-          <p></p>
+          <p>
+            Quick sort uses an element as a pivot and partitions surrounding
+            elements into two sub-arrays. The sub-arrays are dependent on
+            whether they are greater or less than the chosen pivot point.
+          </p>
+          <p>Recursion is used to further sort the sub-arrays.</p>
+          <p>The typical time complexity of quick sort is O(nlogn)</p>
           <img
             src={quickSort}
             alt=""
@@ -351,36 +338,126 @@ const Algorithms = (props) => {
         </TabPane>
         <TabPane tabId="6">
           <h2 className="mt-4">Heap Sort</h2>
+          <p>
+            Heap sort is split into two sections, an unsorted section and a
+            sorted section.
+          </p>
+          <p>
+            The unsorted section of a heap sort is kept in a heap data structure
+            to find its greatest element through each iteration.
+          </p>
           <p>Heap sort is not a stable sorting algorithm.</p>
           <img src={heapSort} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="7">
           <h2 className="mt-4">Binary Search</h2>
+          <p>
+            Binary search is used to locate an element from a sorted list of
+            elements.
+          </p>
+          <p>
+            The section where is the element is located is continously divided
+            in half until it is left with one element.
+          </p>
           <img src={binarySearch} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="8">
           <h2 className="mt-4">Selections</h2>
+          <p>
+            Selections are used to make decisions. It is one of the three logic
+            structures in programming.
+          </p>
+
+          <p>
+            They allow a program to decide whether to answer one way or the
+            other. After its decision, the program may proceed to its next
+            event.
+          </p>
+          <p>
+            An easy way to think about a selection is to describe it as an
+            if-then-else statement:
+          </p>
+          <p>
+            <i>If</i> the condition is true, <i>then</i> do the following,{" "}
+            <i>otherwise</i> do this instead.
+          </p>
+          <img src={selections} alt="" />
         </TabPane>
         <TabPane tabId="9">
           <h2 className="mt-4">Permutations</h2>
-        </TabPane>
-        <TabPane tabId="10">
-          <h2 className="mt-4">Subsets</h2>
+          <p>
+            A permutation is a way in which a set of elements can be arranged.
+          </p>
+          <img src={permutation} alt="" />
         </TabPane>
         <TabPane tabId="11">
           <h2 className="mt-4">Breadth-First Search</h2>
+          <p>
+            This algorithm begins by selecting a starting node, and then
+            traversing the graph through each height level or layer.
+          </p>
+          <p>
+            The search moves horizontally through each layer. After a layer is
+            complete, it moves onto the next layer until the entire search is
+            complete.
+          </p>
           <img src={bfs} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="12">
           <h2 className="mt-4">Depth-First Search</h2>
+          <p>This algorithm is a kind of search in the form of a traversal.</p>
+          <p>
+            By itself, DFS is not very useful. When it is utilized in another
+            algorithm, it becomes more powerful.
+          </p>
+          <p>It is used to traverse the edges and nodes of a graph.</p>
+          <p>
+            DFS will take its path considering the graph's depth first. Once it
+            has reached the bottom, it will backtrack and continue its
+            traversal.
+          </p>
+          <p>
+            The algorithm marks nodes that have been traversed so they are not
+            revisited later.
+          </p>
           <img src={dfs} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="13">
           <h2 className="mt-4">Dijkstra's Algorithm</h2>
-          <img src={dijAlg} alt="" className="img-fluid" />
+          <p>
+            This algorithm is used to find the shortest path among nodes in a
+            graph data structure.
+          </p>
+          <p></p>
+          <p>Here is some pseudocode to help understand the process:</p>
+          <code>
+            Let distance value of starting vertex to the distance to itself = 0
+            <br />
+            Let distance of other vertices from the start = ∞<br />
+            While each vertex is unvisited ---Go to the unvisited vertex with
+            the smallest known distance from the starting vertex
+            <br />
+            ---For each unvisited neighbor of the current vertex:
+            <br />
+            ------Find the distance from the starting vertex
+            <br />
+            ------If the distance of the current vertex is less than the known
+            distance:
+            <br />
+            ---------Update the shortest distance to this vertex
+            <br />
+            ---------Update the previous vertex with the current vertex
+            <br />
+            ---Go to next unvisited neighbor
+            <br />
+            ---Update list of visited vertices
+            <br />
+          </code>
+          <img src={dijAlg} alt="" className="img-fluid mt-4" />
         </TabPane>
         <TabPane tabId="14">
           <h2 className="mt-4">Tree Traversals</h2>
+          <p>Trees can be traversed in several ways unlike queues, stacks, arrays, and linked lists.</p>
           <img src={preorderTrav} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="15">
@@ -405,9 +482,6 @@ const Algorithms = (props) => {
         <TabPane tabId="20">
           <h2 className="mt-4">Graph Connectivity</h2>
           <img src={graphConnect} alt="" className="img-fluid" />
-        </TabPane>
-        <TabPane tabId="21">
-          <h2 className="mt-4">Graph Correlation</h2>
         </TabPane>
       </TabContent>
     </div>
