@@ -19,6 +19,7 @@ import undirectCycle from "../images/undirectCycle.png";
 import graphConnect from "../images/graphConnect.svg";
 import permutation from "../images/permutation.png";
 import selections from "../images/selections.png";
+import externalSort from "../images/externalSort.png";
 
 const Algorithms = (props) => {
   const [activeTab, setActiveTab] = useState("1");
@@ -173,16 +174,6 @@ const Algorithms = (props) => {
             }}
           >
             External Sort
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "16" })}
-            onClick={() => {
-              toggle("16");
-            }}
-          >
-            NP-Complete
           </NavLink>
         </NavItem>
         <NavItem>
@@ -457,15 +448,32 @@ const Algorithms = (props) => {
         </TabPane>
         <TabPane tabId="14">
           <h2 className="mt-4">Tree Traversals</h2>
-          <p>Trees can be traversed in several ways unlike queues, stacks, arrays, and linked lists.</p>
+          <p>
+            Trees can be traversed in several ways unlike queues, stacks,
+            arrays, and linked lists which usually have on path to search.
+          </p>
+          <p>
+            Nodes of a tree during a traversal are usually marked down or even
+            updated.
+          </p>
           <img src={preorderTrav} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="15">
           <h2 className="mt-4">External Sort</h2>
-        </TabPane>
-        <TabPane tabId="16">
-          <h2 className="mt-4">NP-Complete</h2>
-          <img src={npComplete} alt="" className="img-fluid" />
+          <p>This type of sorting is used to handle very large sets of data.</p>
+          <p>
+            It is used when a set of data does not fit into the main component
+            of memory in a computer, and has to resort to an outside source of
+            memory.
+          </p>
+          <p>
+            The usual case of how this sorting works is the data is first sorted
+            in the main memory component and then written out to a temporary
+            file. The merging of the temporary files occurs outside the main
+            memory component, likely in a hard drive with a larger storage
+            space.
+          </p>
+          <img src={externalSort} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="17">
           <h2 className="mt-4">Topological Sort</h2>
