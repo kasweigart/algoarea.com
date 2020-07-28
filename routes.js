@@ -1,6 +1,6 @@
 const express = require('express');
 const mailgun = require('mailgun-js');
-const config = require('./config');
+const config = require('./config/config');
 
 const router = express.Router();
 

@@ -30,10 +30,13 @@ const Algorithms = (props) => {
 
   return (
     <div>
-      <h1 className="mb-3 font-weight-normal">Algorithms</h1>
-      <Link to="/sorting-visualizer" style={{ textDecoration: "none" }}>
+      <div className="mb-3">
+        <h1 className="font-weight-normal">Algorithms</h1>
+        <i>...And Related Terminology</i>
+      </div>
+      {/* <Link to="/sorting-visualizer" style={{ textDecoration: "none" }}>
         <h4>Sorting Visualizer</h4>
-      </Link>
+      </Link> */}
       <Nav tabs>
         <NavItem>
           <NavLink
@@ -193,17 +196,7 @@ const Algorithms = (props) => {
               toggle("18");
             }}
           >
-            Directed Cycle
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === "19" })}
-            onClick={() => {
-              toggle("19");
-            }}
-          >
-            Undirected Cycle
+            Directed Cycles
           </NavLink>
         </NavItem>
         <NavItem>
@@ -477,18 +470,42 @@ const Algorithms = (props) => {
         </TabPane>
         <TabPane tabId="17">
           <h2 className="mt-4">Topological Sort</h2>
+          <p>
+            This is a way to sort verticies of a DAG (Directed Acyclic Graph) in
+            which the order of the verticies is determined by how the verticies
+            are directed towards one another.
+          </p>
+          <p>This is only possible if the graph does not contain any cycles.</p>
+          <p>
+            A linear ordering from a topological sort is valid when an edge{" "}
+            <code>(x, y)</code> in a graph has the vertex <code>x</code>{" "}
+            preceeding vertex <code>y</code>.
+          </p>
           <img src={topolOrder} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="18">
-          <h2 className="mt-4">Directed Cycle</h2>
+          <h2 className="mt-4">Directed Cycles</h2>
+          <h4>Directed Cycle</h4>
+          <p>
+            Directed cycles are cycles in a directed graph which return to the
+            same starting node through its traversal.
+          </p>
           <img src={directCycle} alt="" className="img-fluid" />
-        </TabPane>
-        <TabPane tabId="19">
-          <h2 className="mt-4">Undirected Cycle</h2>
-          <img src={undirectCycle} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="20">
           <h2 className="mt-4">Graph Connectivity</h2>
+          <p>
+            An undirected graph is connceted when a path is present between
+            every pair of verticies.
+          </p>
+          <p>
+            If a graph with at least 3 verticies becomes disconnected by the
+            removal of 1 vertex, it is said to be <code>1-connected</code>.
+          </p>
+          <p>
+            If a graph becomes disconnected by the removal of 1 edge, it is said
+            to be <code>one edge connected</code>.
+          </p>
           <img src={graphConnect} alt="" className="img-fluid" />
         </TabPane>
       </TabContent>

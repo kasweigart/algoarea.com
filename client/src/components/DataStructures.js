@@ -3,13 +3,13 @@ import { TabContent, TabPane, Nav, NavItem, NavLink } from "reactstrap";
 import classnames from "classnames";
 import arr from "../images/arr.svg";
 import linkedList from "../images/linkedList.jpg";
-import stack from '../images/stack.svg'
-import hashTable from '../images/hashTable.svg'
-import ds from '../images/ds.png'
-import binaryHeap from '../images/binaryHeap.svg'
-import graph from '../images/graph.svg'
-import trie from '../images/trie.svg'
-import priorityQueue from '../images/priorityQueue.jpg'
+import stack from "../images/stack.svg";
+import hashTable from "../images/hashTable.svg";
+import ds from "../images/ds.png";
+import binaryHeap from "../images/binaryHeap.svg";
+import graph from "../images/graph.svg";
+import trie from "../images/trie.svg";
+import priorityQueue from "../images/priorityQueue.jpg";
 
 const DataStructures = (props) => {
   const [activeTab, setActiveTab] = useState("1");
@@ -120,7 +120,7 @@ const DataStructures = (props) => {
             A list allowing elements to be added or removed in constant time.
           </p>
           <p>This data structure allows random access unlike a linked list.</p>
-          <img src={arr} alt="" />
+          <img src={arr} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="2">
           <h2 className="mt-4">Linked List</h2>
@@ -137,7 +137,12 @@ const DataStructures = (props) => {
             removing data during an iteration.
           </p>
           <p>Access time of a linked list will always be linear.</p>
-          <img src={linkedList} alt="" style={{width: '75%'}}/>
+          <img
+            src={linkedList}
+            alt=""
+            style={{ width: "75%" }}
+            className="img-fluid"
+          />
         </TabPane>
         <TabPane tabId="3">
           <h2 className="mt-4">Stack & Queue</h2>
@@ -165,7 +170,7 @@ const DataStructures = (props) => {
             Enqueue or add an element into the back of the queue. Dequeue or
             take away an element from the front of the queue.
           </p>
-          <img src={stack} alt=""/>
+          <img src={stack} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="4">
           <h2 className="mt-4">Hash Tables</h2>
@@ -178,7 +183,7 @@ const DataStructures = (props) => {
             Use the hashed key to determine the location of its corresponding
             value.
           </p>
-          <img src={hashTable} alt=""/>
+          <img src={hashTable} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="5">
           <h2 className="mt-4">Binary Tree</h2>
@@ -192,7 +197,7 @@ const DataStructures = (props) => {
             parent node.
           </p>
           <p>Each node may have an arbitrary number of child nodes.</p>
-          <img src={ds} alt="" style={{width: '50%'}}/>
+          <img src={ds} alt="" style={{ width: "50%" }} className="img-fluid" />
         </TabPane>
         <TabPane tabId="6">
           <h2 className="mt-4">Binary Heaps</h2>
@@ -216,7 +221,12 @@ const DataStructures = (props) => {
             present in the tree.
           </p>
           <p>Node values may be equivalent to their parent, but no more.</p>
-          <img src={binaryHeap} alt="" style={{width: '75%'}}/>
+          <img
+            src={binaryHeap}
+            alt=""
+            style={{ width: "75%" }}
+            className="img-fluid"
+          />
         </TabPane>
         <TabPane tabId="7">
           <h2 className="mt-4">Priority Queue</h2>
@@ -230,7 +240,12 @@ const DataStructures = (props) => {
             Two elements that have the same priority are used by their order and
             position in the queue.
           </p>
-          <img src={priorityQueue} alt="" style={{width: '75%'}}/>
+          <img
+            src={priorityQueue}
+            alt=""
+            style={{ width: "75%" }}
+            className="img-fluid"
+          />
         </TabPane>
         <TabPane tabId="8">
           <h2 className="mt-4">Graphs</h2>
@@ -243,7 +258,7 @@ const DataStructures = (props) => {
             The points where the objects are connected are called verticies.
           </p>
           <p>The links that connect the verticies are called edges.</p>
-          <img src={graph} alt=""/>
+          <img src={graph} alt="" className="img-fluid" />
         </TabPane>
         <TabPane tabId="9">
           <h2 className="mt-4">Trie</h2>
@@ -264,7 +279,7 @@ const DataStructures = (props) => {
             Keys usually span out into leaves opening up more variations of the
             string.
           </p>
-          <img src={trie} alt=""/>
+          <img src={trie} alt="" className="img-fluid" />
         </TabPane>
       </TabContent>
     </div>
